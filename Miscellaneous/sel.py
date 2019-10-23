@@ -1,12 +1,12 @@
 #python3
 #YOU HAVE TO FIRST INSTALL SELENIUM BEFORE RUNNING THIS PYTHON3 SCRIPT !!!!!
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium import webdriver #importing selenium
+from selenium.webdriver.common.keys import Keys 
 from selenium import webdriver
 driver = webdriver.Firefox()
 driver.get("https://96dmjlfiiameu26-anticaptcha.labs.icec.tf/")
 totals_rows =driver.find_elements_by_xpath("html/body/div/form/table/tbody/tr")
-total_rows_length = len(totals_rows)
+total_rows_length = len(totals_rows)  #total rows
 print(len(totals_rows))
 a=[]
 b=[]
@@ -16,7 +16,7 @@ e=[]
 import time
 for i in range(5):
     driver.refresh()
-    time.sleep(3)
+    time.sleep(3) # time sleep
     count = 1
     yes=0
     print(i)
